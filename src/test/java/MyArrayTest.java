@@ -21,7 +21,7 @@ public class MyArrayTest {
     public static Collection<Object[]> primeNumbers(){
         return Arrays.asList(new Object[][] {
                 {new MyArray(new int[]{5, -2}), 0},
-                {new MyArray(new int[]{-8, 5, 3}), 120},
+                {new MyArray(new int[]{-8, 5, 3}), -120},
                 {new MyArray(new int[]{ -6, 0, 5, -9, 3, -1}), 270},
                 {new MyArray(new int[]{10,  -3, -1, -5, 7, 0, 6}),420},
         });    }

@@ -26,7 +26,8 @@ public class MyArrayTest {
                 {new MyArray(new int[]{10,  -3, -1, -5, 7, 0, 6}), 420},
                 {new MyArray(new int[]{-100,  -10, 1, 2, 3, 4}), 4000},
                 {new MyArray(new int[]{-100,  0, 1, 2, 3, 4}), 24},
-
+                {new MyArray(new int[]{-1, -2, -3, -4}), -12},
+                {new MyArray(new int[]{1, 8, 2, 5, 6}), 240}
 
         });    }
     @Test

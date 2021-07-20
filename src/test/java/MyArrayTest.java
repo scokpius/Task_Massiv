@@ -23,7 +23,11 @@ public class MyArrayTest {
                 {new MyArray(new int[]{5, -2}), 0},
                 {new MyArray(new int[]{-8, 5, 3}), -120},
                 {new MyArray(new int[]{ -6, 0, 5, -9, 3, -1}), 270},
-                {new MyArray(new int[]{10,  -3, -1, -5, 7, 0, 6}),420},
+                {new MyArray(new int[]{10,  -3, -1, -5, 7, 0, 6}), 420},
+                {new MyArray(new int[]{-100,  -10, 1, 2, 3, 4}), 4000},
+                {new MyArray(new int[]{-100,  0, 1, 2, 3, 4}), 24},
+
+
         });    }
     @Test
     public void checkingForRepetitions() {

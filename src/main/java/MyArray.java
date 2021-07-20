@@ -17,12 +17,23 @@ public class MyArray {
 
         Arrays.sort(myArray);
         countProductOfThreeNumbers();
+
     }
 
     private void countProductOfThreeNumbers() {
-        if (myArray[0]*myArray[1] > myArray[myArray.length-1]*myArray[myArray.length-2]){
-            result = myArray[0]*myArray[1]*myArray[myArray.length-1];
-        } else {result = myArray[myArray.length-3]*myArray[myArray.length-2]*myArray[myArray.length-1];}
+        if (checkForNegativeArray() ||
+                myArray[0]*myArray[1] < myArray[myArray.length-1]*myArray[myArray.length-2]){
+            result = myArray[myArray.length-3]*myArray[myArray.length-2]*myArray[myArray.length-1];
+        }else {result = myArray[0]*myArray[1]*myArray[myArray.length-1];}
+    }
+
+    private boolean checkForNegativeArray() {
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] > 0){
+                return false;
+            }
+        }
+        return true;
     }
 
     private boolean checkLengthOfArray() {
